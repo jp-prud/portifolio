@@ -4,6 +4,7 @@ import Hero from "../Hero";
 import GridProjects from "../GridProjects";
 
 import { Wrapper } from "./styles";
+import Contact from "../Contact";
 
 export default function Layout() {
   return (
@@ -11,6 +12,7 @@ export default function Layout() {
       <Header />
       <Hero />
       <GridProjects />
+      <Contact />
     </Wrapper>
   );
 }

@@ -10,6 +10,12 @@ import {
   ResumeCard,
 } from "./styles";
 
+import JapanStore from "../../assets/Japan.png";
+import Avatar from "../../assets/Avatar.png";
+import Avatar2 from "../../assets/Avatar-2.png";
+import Avatar3 from "../../assets/Avatar-3.png";
+import Avatar4 from "../../assets/Avatar-4.png";
+
 export default function GridProjects() {
   return (
     <Container>
@@ -20,13 +26,12 @@ export default function GridProjects() {
       <Wrapper>
         <LeftSection>
           <Card>
-            <img alt="" src="" />
+            <img alt="Japan Store" src={JapanStore} />
 
             <div className="wrapper">
-              <img alt="" src="" />
+              <img alt="Avatar" src={Avatar} />
 
               <div className="details">
-
                 <h3>
                   Japan Store <span className="evaluate">+126.23%</span>
                 </h3>
@@ -41,7 +46,7 @@ export default function GridProjects() {
 
         <RightSection>
           <ResumeCard>
-            <img />
+            <img alt="Avatar - 2" src={Avatar2} />
 
             <div className="details">
               <h3>
@@ -57,7 +62,7 @@ export default function GridProjects() {
             </div>
           </ResumeCard>
           <ResumeCard>
-            <img />
+            <img alt="Avatar - 3" src={Avatar3} />
 
             <div className="details">
               <h3>
@@ -73,7 +78,7 @@ export default function GridProjects() {
             </div>
           </ResumeCard>
           <ResumeCard>
-            <img />
+            <img alt="Avatar - 4" src={Avatar4} />
 
             <div className="details">
               <h3>

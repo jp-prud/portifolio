@@ -9,23 +9,27 @@ export const Wrapper = styled.div`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   padding-inline: 32px;
+  margin-block: 120px;
 
   h3 {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 104px;
-    font-family: "Manrope", sans-serif;
+    font: 700 60px/104px "Manrope", sans-serif;
   }
 
   span {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    font-family: "Mulish", sans-serif;
+    font-size: 400 20px/30px "Mulish", sans-serif;
     opacity: 0.6;
   }
 
   button {
     max-width: 174px;
   }
+
+  @media (max-width: 980px) {
+    margin-block: 60px;
+
+    h3 {
+      font-size: 42px;
+      line-height: 56px;
+    }
+  } 
 `;

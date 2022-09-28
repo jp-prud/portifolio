@@ -5,13 +5,18 @@ export const Container = styled.header`
   font-family: "Mulish", sans-serif;
 
   > .wrapper {
-    min-height: 126px;
+    min-height: 96px;
     width: 100%;
-    padding-inline: 32px;
+    padding: 20px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+
+    @media (max-width: 760px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 `;
 

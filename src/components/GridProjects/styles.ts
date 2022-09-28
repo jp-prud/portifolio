@@ -26,7 +26,9 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 860px) {
+  @media (max-width: 980px) {
+    flex-direction: column;
+
     > div {
       width: 100%;
     }
@@ -74,7 +76,7 @@ export const RightSection = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 36px;
 `;
 
 export const Card = styled.div`
@@ -85,10 +87,19 @@ export const Card = styled.div`
   flex-direction: column;
   padding: 20px;
   text-align: left;
+  gap: 16px;
 
-  > image {
+  > img {
+    height: 384px;
     width: 100%;
     max-width: 560px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: left;
+
+    @media (max-width: 980px) {
+      max-width: 100%;
+    }
   }
 
   .wrapper {
@@ -117,16 +128,17 @@ export const ResumeCard = styled.div`
   justify-content: space-between;
   gap: 16px;
 
+  img {
+    height: 92px;
+    width: 92px;
+    border-radius: 50px;
+  }
+
   .details {
     gap: 8px;
 
-    img {
-      height: 116px;
-      width: 116px;
-      border-radius: 58px;
-    }
-
     h3 {
+      margin: 0;
       font-size: 24px;
     }
 

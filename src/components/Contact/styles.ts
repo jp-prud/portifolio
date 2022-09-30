@@ -4,11 +4,16 @@ export const Container = styled.div`
   padding: 32px;
   background: ${({ theme }) => theme.colors.gray[600]};
   border-radius: 16px;
+  width: 100%;
+  max-width: 1136px;
+  margin: 0 auto 80px;
+
+  @media (max-width: 780px) {
+    margin-bottom: 56px;
+  }
 `;
 
 export const Wrapper = styled.div`
-  width: 100%;
-  max-width: 1125px;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -27,10 +32,20 @@ export const LeftSection = styled.div`
 
   h3 {
     font: 600 42px/64px "Manrope", sans-serif;
+    margin: 0;
 
     &::first-line {
       font-weight: 800;
       font-size: 50px;
+    }
+
+    @media (max-width: 780px) {
+      font-size: 24px;
+      line-height: 42px;
+
+      &::first-line {
+        font-size: 32px;
+      }
     }
   }
 

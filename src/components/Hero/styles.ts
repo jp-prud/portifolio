@@ -8,8 +8,7 @@ export const Wrapper = styled.div`
   gap: 32px;
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
-  padding-inline: 32px;
-  margin-block: 120px;
+  margin-block: 20px;
 
   h3 {
     font: 700 60px/104px "Manrope", sans-serif;
@@ -31,5 +30,5 @@ export const Wrapper = styled.div`
       font-size: 42px;
       line-height: 56px;
     }
-  } 
+  }
 `;

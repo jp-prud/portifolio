@@ -3,6 +3,8 @@ import { Wrapper, LeftSection, RightSection } from "./styles";
 import Button from "../button";
 import { Container } from "./styles";
 
+import Profile from "../../assets/Profile.png";
+
 export default function Contact() {
   return (
     <Container>
@@ -17,7 +19,7 @@ export default function Contact() {
           <Button>Contato</Button>
         </LeftSection>
         <RightSection>
-          <img />
+          <img alt="Profile" src={Profile} />
         </RightSection>
       </Wrapper>
     </Container>

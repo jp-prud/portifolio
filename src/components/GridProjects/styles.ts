@@ -8,7 +8,6 @@ export const Container = styled.div`
   text-align: center;
   gap: 48px;
   margin-block: 98px;
-  padding-inline: 32px;
 `;
 
 export const Details = styled.div`
@@ -16,6 +15,12 @@ export const Details = styled.div`
 
   h3 {
     font: bold 48px/54px "Manrope", sans-serif;
+  }
+
+  @media (max-width: 760px) {
+    h3 {
+      font-size: 36px;
+    }
   }
 `;
 
@@ -39,6 +44,7 @@ export const Wrapper = styled.div`
   }
 
   .details {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -64,6 +70,24 @@ export const Wrapper = styled.div`
 
     > span {
       opacity: 0.6;
+    }
+
+    @media (max-width: 760px) {
+      h3 {
+        text-align: left;
+        align-items: start !important;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 24px;
+
+        .evaluate {
+          font-size: 16px;
+        }
+      }
+
+      h3 + span {
+        display: none;
+      }
     }
   }
 `;
@@ -135,9 +159,11 @@ export const ResumeCard = styled.div`
   }
 
   .details {
+    width: 100%;
     gap: 8px;
 
     h3 {
+      width: 100%;
       margin: 0;
       font-size: 24px;
     }

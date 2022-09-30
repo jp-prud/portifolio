@@ -20,7 +20,7 @@ export default function GridProjects() {
   return (
     <Container>
       <Details>
-        <h3>Principais Caos de Uso 🎖️</h3>
+        <h3>Principais Casos de Uso 🎖️</h3>
       </Details>
 
       <Wrapper>
